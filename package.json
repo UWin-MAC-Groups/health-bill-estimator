@@ -1,0 +1,37 @@
+{
+  "name": "health-bill-estimator",
+  "version": "1.0.0",
+  "description": "The web app for a hospital bill estimation prototype for WINHACKS2021",
+  "main": "app.js",
+  "engines": {
+    "node": "14.15.1",
+    "npm": "6.14.8"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha --timeout 10000",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UWin-MAC-Groups/health-bill-estimator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UWin-MAC-Groups/health-bill-estimator/issues"
+  },
+  "homepage": "https://github.com/UWin-MAC-Groups/health-bill-estimator#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7"
+  }
+}
