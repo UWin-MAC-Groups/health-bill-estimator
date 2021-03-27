@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(180deg, #CDC3EC 16.28%, rgba(66, 121, 227, 0.13) 100%) no-repeat;
+}
+
+.hbe-btn-nav {
+    border-radius: 1.06em;
+    background-color: #060016;
+    color: #FFFFFF !important;
+}
+
+main {
+    min-height: 500px;
+}
+
+section h3.title {
+    text-transform: capitalize;
+    font: bold 48px "Amatic SC", sans-serif;
+    margin-bottom: 30px;
+}
+
+section p {
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}

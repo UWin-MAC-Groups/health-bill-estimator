@@ -14,6 +14,24 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use('/', express.static(path.join(__dirname + 'public')));
 
+/**
+ * About route. Renders about page* 
+ * @param req
+ * @param res
+ */
+ app.get('/about', (req, res) => {
+    res.render('pages/about');
+});
+
+/**
+ * About route. Renders about page* 
+ * @param req
+ * @param res
+ */
+ app.get('/contact', (req, res) => {
+    res.render('pages/contact');
+});
+
 
 /**
  * Use router for specified path
