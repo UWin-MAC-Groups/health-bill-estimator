@@ -2,6 +2,9 @@ html {
     height: 100%;
 }
 body {
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
     background: linear-gradient(180deg, #CDC3EC 16.28%, rgba(66, 121, 227, 0.13) 100%) no-repeat;
 }
 
