@@ -41,5 +41,6 @@ section p {
 
 }
 
-
-
+.bold{
+    font-weight:bold;
+}
