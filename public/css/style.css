@@ -14,18 +14,32 @@ body {
     color: #FFFFFF !important;
 }
 
+
 main {
     min-height: 500px;
 }
 
 section h3.title {
     text-transform: capitalize;
-    font: bold 48px "Amatic SC", sans-serif;
+    font-family:"Roboto", sans-serif;
     margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
 }
 
 section p {
     line-height: 2;
     padding: 0 20px;
     margin-bottom: 30px;
+    font-family:"Roboto", sans-serif;
 }
+
+.picture1{
+    margin: 10px auto 20px;
+    display: block;
+
+}
+
+
+
