@@ -14,25 +14,25 @@
                     <div class="col-sm-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 pt-5">
                         <div class="search-container mt-5 px-5 box-shadow-1">
                             <div class="search-form">
-                                <form method="POST" action="/app/search">
+                                <form method="POST" action="/app/predict">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                           <label for="age">Age</label>
-                                          <input type="number" class="form-control" id="age" placeholder="Age">
+                                          <input type="number" class="form-control" id="age" name="age" placeholder="Age" required />
                                         </div>
                                         <div class="form-group col-md-6">
                                           <label for="bmi">BMI</label>
-                                          <input type="number" class="form-control" id="bmi" placeholder="BMI">
+                                          <input type="number" class="form-control" id="bmi" name="bmi" placeholder="BMI" required />
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                           <label for="noOfChildren">Number of Children</label>
-                                          <input type="number" class="form-control" id="noOfChildren" placeholder="Number of Children">
+                                          <input type="number" class="form-control" id="noOfChildren" name="children" placeholder="Number of Children" required />
                                         </div>
                                         <div class="form-group col-md-6">
                                           <label for="region">Region</label>
-                                          <select class="form-control" id="region">
+                                          <select class="form-control" id="region" name="region" required>
                                             <option value="northeast">North East</option>
                                             <option value="northwest">North West</option>
                                             <option value="southeast">South East</option>
@@ -45,12 +45,12 @@
                                             <label>Gender</label>
                                             <div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="gender" id="gender1" value="female">
-                                                    <label class="form-check-label" for="gender1">Female</label>
+                                                    <input class="form-check-input" type="radio" name="sex" id="sex2" value="female" required />
+                                                    <label class="form-check-label" for="sex2">Female</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="gender" id="gender2" value="male">
-                                                    <label class="form-check-label" for="gender2">Male</label>
+                                                    <input class="form-check-input" type="radio" name="sex" id="sex2" value="male" />
+                                                    <label class="form-check-label" for="sex2">Male</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -58,18 +58,18 @@
                                             <label>Do you smoke?</label>
                                             <div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="smoke" id="smoke1" value="yes">
+                                                    <input class="form-check-input" type="radio" name="smoker" id="smoke1" value="yes" required />
                                                     <label class="form-check-label" for="smoke1">Yes</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="smoke" id="smoke2" value="no">
+                                                    <input class="form-check-input" type="radio" name="smoker" id="smoke2" value="no" required />
                                                     <label class="form-check-label" for="smoke2">No</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <button type="button" class="btn btn-lg hbe-btn-nav">Submit</button>
+                                        <button type="submit" class="btn btn-lg hbe-btn-nav">Submit</button>
                                     </div>
                                 </form>
                             </div>

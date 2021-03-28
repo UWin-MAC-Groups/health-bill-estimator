@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/head.ejs', {title: 'Search Results'}); %>
+</head>
+<body>
+    <%- include('../partials/header.ejs'); %>
+
+    <main>
+        <div class="app-page">
+            <div class="container pt-5">
+                <h1>Predicted Billing Cost</h1>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>User Info</h2>
+                        <p>Age: <%= userInfo.age %></p>
+                        <p>BMI: <%= userInfo.bmi %></p>
+                        <p>Sex:<%= userInfo.sex %></p>
+                        <p>Number of Children: <%= userInfo.children %></p>
+                        <p>Region: <%= userInfo.region %></p>
+                        <p>Smoker: <%= userInfo.smoker %></p>
+                        <hr />
+                        <p class="font-weight-bold">Predicted Cost: <%= data %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('../partials/footer.ejs'); %>
+</body>
+</html>
