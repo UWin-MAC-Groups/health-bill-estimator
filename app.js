@@ -32,6 +32,14 @@ app.use('/', express.static(path.join(__dirname + 'public')));
     res.render('pages/contact');
 });
 
+/**
+ * App route. Render the app page with the search form.
+ * @param req
+ * @param res
+ */
+ router.get('/', (req, res) => {
+    res.render('pages/app')
+});
 
 /**
  * Use router for specified path

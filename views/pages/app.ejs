@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/head.ejs', {title: 'App'}); %>
+</head>
+<body>
+    <%- include('../partials/header.ejs'); %>
+    <main>
+        <div class="app-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 pt-5">
+                        <div class="search-container mt-5 px-5 box-shadow-1">
+                            <div class="search-form">
+                                <form method="POST" action="/app/search">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="age">Age</label>
+                                          <input type="number" class="form-control" id="age" placeholder="Age">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="bmi">BMI</label>
+                                          <input type="number" class="form-control" id="bmi" placeholder="BMI">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="noOfChildren">Number of Children</label>
+                                          <input type="number" class="form-control" id="noOfChildren" placeholder="Number of Children">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="region">Region</label>
+                                          <select class="form-control" id="region">
+                                            <option value="northeast">North East</option>
+                                            <option value="northwest">North West</option>
+                                            <option value="southeast">South East</option>
+                                            <option value="southwest">South West</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Gender</label>
+                                            <div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gender" id="gender1" value="female">
+                                                    <label class="form-check-label" for="gender1">Female</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gender" id="gender2" value="male">
+                                                    <label class="form-check-label" for="gender2">Male</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label>Do you smoke?</label>
+                                            <div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="smoke" id="smoke1" value="yes">
+                                                    <label class="form-check-label" for="smoke1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="smoke" id="smoke2" value="no">
+                                                    <label class="form-check-label" for="smoke2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-lg hbe-btn-nav">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs'); %>
+</body>
+</html>
